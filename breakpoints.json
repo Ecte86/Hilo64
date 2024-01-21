@@ -1,0 +1,1 @@
+{"Breakpoints":[{"StopWhenHit":true,"IsEnabled":true,"Mode":0,"Condition":null,"Bind":{"$type":"line","FilePath":{"Path":"src\\main.c","IsRelative":true,"FileName":"main.c"},"LineNumber":141,"LineText":"    for (int i = 0; i \u003C length; i\u002B\u002B) {"}}]}

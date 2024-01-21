@@ -1,0 +1,253 @@
+sections
+0880 - 2ef4 : DATA, code
+28fe - 3038 : DATA, data
+3038 - 3038 : BSS, bss
+3038 - 9000 : HEAP, heap
+9000 - 9f19 : STACK, stack
+00f7 - 00f7 : ZEROPAGE, zeropage
+0801 - 0863 : DATA, startup
+9fef - a000 : SSTACK, sstack
+9fef - 9fef : SSTACK, putch@stack
+9fef - 9fef : SSTACK, iocharmap@stack
+9fef - 9fef : SSTACK, puts@stack
+9fdf - 9fef : SSTACK, nformi@stack
+9fdf - 9fef : SSTACK, nforml@stack
+9fef - 9fef : SSTACK, isinf@stack
+9fef - 9fef : SSTACK, nformf@stack
+9fd1 - 9fdf : SSTACK, sformat@stack
+9f9f - 9fd1 : SSTACK, printf@stack
+9f99 - 9f9f : SSTACK, printLine@stack
+9fef - 9fef : SSTACK, hexch@stack
+9fef - 9fef : SSTACK, scanpat@stack
+9fef - 9fef : SSTACK, getchar@stack
+9fef - 9fef : SSTACK, scanf_func@stack
+9fef - 9fef : SSTACK, scanf@stack
+9f9d - 9f9f : SSTACK, askForNumber@stack
+9f3b - 9f99 : SSTACK, mainMenu@stack
+9fef - 9fef : SSTACK, srand@stack
+9fef - 9fef : SSTACK, clock@stack
+9fef - 9fef : SSTACK, rand@stack
+9fef - 9fef : SSTACK, generateSecretNumber@stack
+9fef - 9fef : SSTACK, initGame@stack
+9f3b - 9f3b : SSTACK, processMainMenu@stack
+9f3b - 9f99 : SSTACK, difficultyMenu@stack
+9f3b - 9f3b : SSTACK, processDifficultyMenu@stack
+9fcf - 9fd1 : SSTACK, sprintf@stack
+9fef - 9fef : SSTACK, strlen@stack
+9f97 - 9f99 : SSTACK, playGamePrintCurrentGuessNumber@stack
+9fcf - 9fcf : SSTACK, playGameAlterPrompt@stack
+9f9b - 9f9f : SSTACK, playGameLogic@stack
+9f9d - 9f9f : SSTACK, playGameCheckWin@stack
+9f8e - 9f97 : SSTACK, playGame@stack
+9f9f - 9f9f : SSTACK, highScores@stack
+9f9f - 9f9f : SSTACK, exitGame@stack
+9fef - 9fef : SSTACK, clrscr@stack
+9f19 - 9f3b : SSTACK, main@stack
+
+regions
+00f7 - 00ff : 0000, 0000, zeropage
+0801 - 0880 : 0863, 0062, startup
+0880 - 9000 : 3038, 27b8, main
+
+objects
+00f7 - 00f7 : ZeroStart, END:zeropage
+00f7 - 00f7 : ZeroEnd, tk_none:zeropage
+0801 - 0863 : startup, NATIVE_CODE:startup
+0880 - 090a : main, NATIVE_CODE:code
+090a - 0927 : iocharmap, NATIVE_CODE:code
+0927 - 092d : putch, NATIVE_CODE:code
+092d - 0962 : processMainMenu, NATIVE_CODE:code
+0962 - 0a41 : mainMenu, NATIVE_CODE:code
+0a41 - 0a6f : printf, NATIVE_CODE:code
+0a6f - 0ebb : sformat, NATIVE_CODE:code
+0ebb - 0ecd : puts, NATIVE_CODE:code
+0ecd - 0f10 : putpch, NATIVE_CODE:code
+0f10 - 1045 : nformi, NATIVE_CODE:code
+1045 - 11b8 : nforml, NATIVE_CODE:code
+11b8 - 167e : nformf, NATIVE_CODE:code
+167e - 168f : isinf, NATIVE_CODE:code
+168f - 169a : *, DATA:code
+169a - 1718 : printLine, NATIVE_CODE:code
+1718 - 171b : *, DATA:code
+171b - 171d : *, DATA:code
+171d - 1730 : *, DATA:code
+1730 - 1738 : *, DATA:code
+1738 - 17a1 : askForNumber, NATIVE_CODE:code
+17a1 - 17a4 : *, DATA:code
+17a4 - 17cd : scanf, NATIVE_CODE:code
+17cd - 20c0 : fpscanf, NATIVE_CODE:code
+20c0 - 20fa : hexch, NATIVE_CODE:code
+20fa - 21af : scanpat, NATIVE_CODE:code
+21af - 21b9 : scanf_func, NATIVE_CODE:code
+21b9 - 21c5 : getchar, NATIVE_CODE:code
+21c5 - 21f6 : getpch, NATIVE_CODE:code
+21f6 - 21f9 : *, DATA:code
+21f9 - 21fd : clrscr, NATIVE_CODE:code
+21fd - 2200 : bcexec, NATIVE_CODE:code
+2200 - 2209 : *, DATA:code
+2209 - 223f : initGame, NATIVE_CODE:code
+223f - 2276 : generateSecretNumber, NATIVE_CODE:code
+2276 - 2287 : clock, NATIVE_CODE:code
+2287 - 22ae : rand, NATIVE_CODE:code
+22ae - 22ec : processDifficultyMenu, NATIVE_CODE:code
+22ec - 23bd : difficultyMenu, NATIVE_CODE:code
+23bd - 23c9 : *, DATA:code
+23c9 - 2569 : playGame, NATIVE_CODE:code
+2569 - 258c : *, DATA:code
+258c - 2598 : *, DATA:code
+2598 - 25a6 : *, DATA:code
+25a6 - 264e : playGamePrintCurrentGuessNumber, NATIVE_CODE:code
+264e - 26a5 : sprintf, NATIVE_CODE:code
+26a5 - 26b5 : *, DATA:code
+26b5 - 26d9 : strlen, NATIVE_CODE:code
+26d9 - 275e : playGameAlterPrompt, NATIVE_CODE:code
+275e - 2781 : *, DATA:code
+2781 - 278e : *, DATA:code
+278e - 2836 : playGameLogic, NATIVE_CODE:code
+2836 - 2840 : *, DATA:code
+2840 - 284b : *, DATA:code
+284b - 28ce : playGameCheckWin, NATIVE_CODE:code
+28ce - 28ee : *, DATA:code
+28ee - 28fb : *, DATA:code
+28fb - 28fe : __multab30L, DATA:code
+28fe - 28ff : spentry, DATA:data
+28ff - 2900 : giocharmap, DATA:data
+2900 - 291a : *, DATA:code
+291a - 2926 : *, DATA:code
+2926 - 2946 : mul16by8, NATIVE_CODE:code
+2946 - 298b : freg, NATIVE_CODE:code
+298b - 2a72 : faddsub, NATIVE_CODE:code
+2a72 - 2b13 : fmul, NATIVE_CODE:code
+2b13 - 2b41 : fmul8, NATIVE_CODE:code
+2b41 - 2bef : fdiv, NATIVE_CODE:code
+2bef - 2c0d : divs16, NATIVE_CODE:code
+2c0d - 2c1b : negaccu, NATIVE_CODE:code
+2c1b - 2c29 : negtmp, NATIVE_CODE:code
+2c29 - 2cae : divmod, NATIVE_CODE:code
+2cae - 2cd7 : mods16, NATIVE_CODE:code
+2cd7 - 2d19 : f32_to_i16, NATIVE_CODE:code
+2d19 - 2d37 : sint16_to_float, NATIVE_CODE:code
+2d37 - 2d64 : uint16_to_float, NATIVE_CODE:code
+2d64 - 2d9f : mul32, NATIVE_CODE:code
+2d9f - 2e35 : divmod32, NATIVE_CODE:code
+2e35 - 2ef4 : malloc, NATIVE_CODE:code
+2ef4 - 2ef6 : seed, DATA:data
+2ef6 - 2efa : HeapNode, DATA:bss
+2f00 - 2f5a : *, DATA:data
+2f5a - 2f76 : fround5, DATA:data
+2f76 - 2f92 : tpow10, DATA:data
+2f92 - 2fec : *, DATA:data
+3000 - 3038 : bitshift, DATA:data
+3038 - 3038 : BSSEnd, tk_none:bss
+3038 - 3038 : BSSStart, END:bss
+3038 - 3038 : HeapStart, END:heap
+9000 - 9000 : HeapEnd, tk_none:heap
+9f19 - 9f19 : StackEnd, tk_none:stack
+9f19 - 9f3b : game, BSS:main@stack
+9f3b - 9f3f : difficultyMenu@stack, BSS:difficultyMenu@stack
+9f3b - 9f3f : mainMenu@stack, BSS:mainMenu@stack
+9f3f - 9f99 : choices, BSS:difficultyMenu@stack
+9f3f - 9f99 : choices, BSS:mainMenu@stack
+9f8e - 9f97 : playGame@stack, BSS:playGame@stack
+9f97 - 9f99 : playGamePrintCurrentGuessNumber@stack, BSS:playGamePrintCurrentGuessNumber@stack
+9f99 - 9f9f : printLine@stack, BSS:printLine@stack
+9f9b - 9f9f : playGameLogic@stack, BSS:playGameLogic@stack
+9f9d - 9f9f : playGameCheckWin@stack, BSS:playGameCheckWin@stack
+9f9d - 9f9f : number, BSS:askForNumber@stack
+9f9f - 9fd1 : buff, BSS:printf@stack
+9fcf - 9fd1 : sprintf@stack, BSS:sprintf@stack
+9fd1 - 9fd7 : sformat@stack, BSS:sformat@stack
+9fd7 - 9fdf : si, BSS:sformat@stack
+9fdf - 9fef : buffer, BSS:nforml@stack
+9fdf - 9fef : buffer, BSS:nformi@stack
+9fef - a000 : sstack, STACK:sstack
+
+objects by size
+17cd (08f3) : fpscanf, NATIVE_CODE:code
+11b8 (04c6) : nformf, NATIVE_CODE:code
+0a6f (044c) : sformat, NATIVE_CODE:code
+23c9 (01a0) : playGame, NATIVE_CODE:code
+1045 (0173) : nforml, NATIVE_CODE:code
+0f10 (0135) : nformi, NATIVE_CODE:code
+298b (00e7) : faddsub, NATIVE_CODE:code
+0962 (00df) : mainMenu, NATIVE_CODE:code
+22ec (00d1) : difficultyMenu, NATIVE_CODE:code
+2e35 (00bf) : malloc, NATIVE_CODE:code
+20fa (00b5) : scanpat, NATIVE_CODE:code
+2b41 (00ae) : fdiv, NATIVE_CODE:code
+25a6 (00a8) : playGamePrintCurrentGuessNumber, NATIVE_CODE:code
+278e (00a8) : playGameLogic, NATIVE_CODE:code
+2a72 (00a1) : fmul, NATIVE_CODE:code
+2d9f (0096) : divmod32, NATIVE_CODE:code
+0880 (008a) : main, NATIVE_CODE:code
+26d9 (0085) : playGameAlterPrompt, NATIVE_CODE:code
+2c29 (0085) : divmod, NATIVE_CODE:code
+284b (0083) : playGameCheckWin, NATIVE_CODE:code
+169a (007e) : printLine, NATIVE_CODE:code
+1738 (0069) : askForNumber, NATIVE_CODE:code
+0801 (0062) : startup, NATIVE_CODE:startup
+9f3f (005a) : choices, BSS:difficultyMenu@stack
+9f3f (005a) : choices, BSS:mainMenu@stack
+264e (0057) : sprintf, NATIVE_CODE:code
+2946 (0045) : freg, NATIVE_CODE:code
+0ecd (0043) : putpch, NATIVE_CODE:code
+2cd7 (0042) : f32_to_i16, NATIVE_CODE:code
+22ae (003e) : processDifficultyMenu, NATIVE_CODE:code
+2d64 (003b) : mul32, NATIVE_CODE:code
+20c0 (003a) : hexch, NATIVE_CODE:code
+3000 (0038) : bitshift, DATA:data
+223f (0037) : generateSecretNumber, NATIVE_CODE:code
+2209 (0036) : initGame, NATIVE_CODE:code
+092d (0035) : processMainMenu, NATIVE_CODE:code
+9f9f (0032) : buff, BSS:printf@stack
+21c5 (0031) : getpch, NATIVE_CODE:code
+0a41 (002e) : printf, NATIVE_CODE:code
+2b13 (002e) : fmul8, NATIVE_CODE:code
+2d37 (002d) : uint16_to_float, NATIVE_CODE:code
+17a4 (0029) : scanf, NATIVE_CODE:code
+2cae (0029) : mods16, NATIVE_CODE:code
+2287 (0027) : rand, NATIVE_CODE:code
+26b5 (0024) : strlen, NATIVE_CODE:code
+9f19 (0022) : game, BSS:main@stack
+2926 (0020) : mul16by8, NATIVE_CODE:code
+2bef (001e) : divs16, NATIVE_CODE:code
+2d19 (001e) : sint16_to_float, NATIVE_CODE:code
+090a (001d) : iocharmap, NATIVE_CODE:code
+2f5a (001c) : fround5, DATA:data
+2f76 (001c) : tpow10, DATA:data
+0ebb (0012) : puts, NATIVE_CODE:code
+167e (0011) : isinf, NATIVE_CODE:code
+2276 (0011) : clock, NATIVE_CODE:code
+9fef (0011) : sstack, STACK:sstack
+9fdf (0010) : buffer, BSS:nforml@stack
+9fdf (0010) : buffer, BSS:nformi@stack
+2c0d (000e) : negaccu, NATIVE_CODE:code
+2c1b (000e) : negtmp, NATIVE_CODE:code
+21b9 (000c) : getchar, NATIVE_CODE:code
+21af (000a) : scanf_func, NATIVE_CODE:code
+9f8e (0009) : playGame@stack, BSS:playGame@stack
+9fd7 (0008) : si, BSS:sformat@stack
+0927 (0006) : putch, NATIVE_CODE:code
+9f99 (0006) : printLine@stack, BSS:printLine@stack
+9fd1 (0006) : sformat@stack, BSS:sformat@stack
+21f9 (0004) : clrscr, NATIVE_CODE:code
+2ef6 (0004) : HeapNode, DATA:bss
+9f3b (0004) : difficultyMenu@stack, BSS:difficultyMenu@stack
+9f3b (0004) : mainMenu@stack, BSS:mainMenu@stack
+9f9b (0004) : playGameLogic@stack, BSS:playGameLogic@stack
+21fd (0003) : bcexec, NATIVE_CODE:code
+28fb (0003) : __multab30L, DATA:code
+2ef4 (0002) : seed, DATA:data
+9f97 (0002) : playGamePrintCurrentGuessNumber@stack, BSS:playGamePrintCurrentGuessNumber@stack
+9f9d (0002) : playGameCheckWin@stack, BSS:playGameCheckWin@stack
+9f9d (0002) : number, BSS:askForNumber@stack
+9fcf (0002) : sprintf@stack, BSS:sprintf@stack
+28fe (0001) : spentry, DATA:data
+28ff (0001) : giocharmap, DATA:data
+00f7 (0000) : ZeroStart, END:zeropage
+00f7 (0000) : ZeroEnd, tk_none:zeropage
+3038 (0000) : BSSEnd, tk_none:bss
+3038 (0000) : BSSStart, END:bss
+3038 (0000) : HeapStart, END:heap
+9000 (0000) : HeapEnd, tk_none:heap
+9f19 (0000) : StackEnd, tk_none:stack

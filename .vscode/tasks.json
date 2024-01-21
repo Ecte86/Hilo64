@@ -1,0 +1,59 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "type": "make",
+            "group": "build",
+            "problemMatcher": {
+                "owner": "oscar64",
+                "pattern": [
+                    {
+                        "regexp": "(.:.*/.*/\\w+\\.cp{0,}).(\\d+). (\\d+).*(error.*|warning.*): (.*)",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3,
+                        "severity": 4,
+                        "message": 5
+                    }
+                ],
+                "fileLocation": [
+                    "absolute"
+                ]
+            },
+            "label": "make: cleanbuild",
+            "detail": "./Makefile"
+        },
+        {
+            "type": "make",
+            "script": "debug_build",
+            "target": "debug_build",
+            "path": "",
+            "fileName": "Makefile",
+            "uri": {
+                "$mid": 1,
+                "fsPath": "d:\\Misc-Scripts-n-Code\\oscar64\\hilo\\Makefile",
+                "_sep": 1,
+                "path": "/d:/Misc-Scripts-n-Code/oscar64/hilo/Makefile",
+                "scheme": "file"
+            },
+            "problemMatcher": {
+                "owner": "oscar64",
+                "pattern": [
+                    {
+                        "regexp": "(.:.*/.*/\\w+\\.cp{0,}).(\\d+). (\\d+).*(error.*|warning.*): (.*)",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3,
+                        "severity": 4,
+                        "message": 5
+                    }
+                ],
+                "fileLocation": [
+                    "absolute"
+                ]
+            },
+            "group": "build",
+            "label": "make: debug_build"
+        }
+    ]
+}
