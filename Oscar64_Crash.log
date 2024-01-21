@@ -1,0 +1,24 @@
+Makefile build command:
+$ oscar64 -v -g -o=bin/hilo.prg src/main.c src/utils.c
+Starting oscar64 1.26.230.0
+Compiling "D:/Misc-Scripts-n-Code/oscar64/hilo/src/main.c"
+Including "D:/Misc-Scripts-n-Code/oscar64/hilo/include/main.h"
+Including "D:/Emulation/Commodore/CBM-Development/Compilers/oscar64/include/stdio.h"
+Including "D:/Emulation/Commodore/CBM-Development/Compilers/oscar64/include/stdlib.h"
+Including "D:/Emulation/Commodore/CBM-Development/Compilers/oscar64/include/stdlib.h"
+Including "D:/Emulation/Commodore/CBM-Development/Compilers/oscar64/include/string.h"
+Including "D:/Emulation/Commodore/CBM-Development/Compilers/oscar64/include/stdbool.h"
+Including "D:/Emulation/Commodore/CBM-Development/Compilers/oscar64/include/conio.h"
+Including "D:/Emulation/Commodore/CBM-Development/Compilers/oscar64/include/time.h"
+Including "D:/Misc-Scripts-n-Code/oscar64/hilo/include/defs.h"
+Including "D:/Misc-Scripts-n-Code/oscar64/hilo/include/main.h"
+Including "D:/Misc-Scripts-n-Code/oscar64/hilo/include/utils.h"
+Including "D:/Emulation/Commodore/CBM-Development/Compilers/oscar64/include/stdio.h"
+Including "D:/Emulation/Commodore/CBM-Development/Compilers/oscar64/include/stdlib.h"
+Including "D:/Emulation/Commodore/CBM-Development/Compilers/oscar64/include/stdbool.h"
+Including "D:/Misc-Scripts-n-Code/oscar64/hilo/include/main.h"
+D:/Misc-Scripts-n-Code/oscar64/hilo/src/main.c(21, 5)
+: error 3006: Term starts with invalid token ''}''
+D:/Misc-Scripts-n-Code/oscar64/hilo/src/main.c(21, 6)
+: error 3008: Constant initializer expected
+oscar64 crashed. c0000005 00551796make: *** [Makefile:20: debug_build] Error 30
